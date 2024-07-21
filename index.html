@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <title>ToDoList</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="todoapp">
-                <h2>To-Do-List<img src="A.gif"></h2>
-                <div class="row">
-                    <input type="text" id="input-box" placeholder="Add your text">
-                    <button onclick="addTask()">Add</button>
-                </div>
-                <ul id="listcontainer">
-                    <!-- <li class="checked">Task 1</li> -->
-                    <!-- <li>Task 2</li> -->
-                    <!-- <li>Task 3</li> -->
-                </ul>
+<head>
+    <meta charset="utf-8"/>
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todoapp">
+            <h2>To-Do-List<img src="A.gif" alt="To-Do List Icon"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
             </div>
+            <form id="task-form">
+                <label for="date">Select a date for the task:</label>
+                <input type="date" id="date" name="date">
+                <label for="time">Select a time for the task:</label>
+                <input type="time" id="time" name="time">
+                <input type="submit" value="Add Task">
+            </form>
+            <ul id="listcontainer">
+                <!-- Task items will be added here -->
+            </ul>
         </div>
-    </body>
+    </div>
     <script src="app.js"></script>
- </html>
+</body>
+</html>
